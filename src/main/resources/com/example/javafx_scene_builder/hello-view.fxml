@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/20" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.javafx_scene_builder.LoginController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="261.0" style="-fx-background-color: #FF6347;">
+         <children>
+            <ImageView fitHeight="112.0" fitWidth="220.0" layoutX="47.0" layoutY="200.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@image.jpg" />
+               </image>
+            </ImageView>
+            <Line endX="100.0" layoutX="139.0" layoutY="119.0" startX="-100.0" />
+            <Label layoutX="101.0" layoutY="56.0" prefHeight="36.0" prefWidth="60.0" text="UG">
+               <font>
+                  <Font size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="134.0" text="Library">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="393.0" layoutY="89.0" text="Secure Login" textAlignment="CENTER" textOverrun="WORD_ELLIPSIS">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="286.0" layoutY="163.0" text="Username:" />
+      <Label layoutX="286.0" layoutY="200.0" text="Password:" />
+      <TextField fx:id="usernameTextfield" layoutX="349.0" layoutY="159.0" onAction="#goingToLogin" promptText="Username" />
+      <TextField fx:id="passwordTextfield" layoutX="349.0" layoutY="196.0" promptText="Password" />
+      <Button fx:id="loginButton" layoutX="301.0" layoutY="238.0" mnemonicParsing="false" onAction="#goingToLogin" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: #FF6347;" text="login" />
+      <Button fx:id="cancelButton" layoutX="301.0" layoutY="282.0" mnemonicParsing="false" onAction="#cancelButtonAvtion" prefHeight="30.0" prefWidth="201.0" style="-fx-background-color: #FF6347;" text="Cancel" />
+      <Button fx:id="linkRegister" layoutX="519.0" layoutY="356.0" mnemonicParsing="false" onAction="#changeSceneRegister" prefHeight="30.0" prefWidth="63.0" style="-fx-background-color: #FF6347;" text="Register">
+         <font>
+            <Font size="11.0" />
+         </font>
+      </Button>
+      <Label fx:id="loginMassage" alignment="CENTER" layoutX="304.0" layoutY="126.0" prefHeight="18.0" prefWidth="240.0" textFill="#e80b0b" />
+   </children>
+</AnchorPane>
